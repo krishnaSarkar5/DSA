@@ -11,7 +11,7 @@ public class GCD {
     public static void main(String[] args) {
         int a= 4;
         int b= 8;
-        System.out.printf("Greatest Common Divisor od %d and %d is: %d",a,b,gcd(a, b));
+        System.out.printf("Greatest Common Divisor of %d and %d is: %d",a,b,gcd(a, b));
     }
 }
 
