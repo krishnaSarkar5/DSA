@@ -1,12 +1,8 @@
 public class LongestConsequitive1s {
     
-    public static int consequitive(int n){
-        
+    public static int consequitive(int n){       
         int  largestConsiquitive = 0;
         int cn = 0;
-
-
-
         while(n>0){
             if((n&1)==1){
                 cn++;
@@ -17,8 +13,7 @@ public class LongestConsequitive1s {
                 cn=0;
             }
            n = n>>1;
-        }
-        
+        }       
         return largestConsiquitive;
     }
 
