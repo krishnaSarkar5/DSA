@@ -1,4 +1,5 @@
 public class IsArraySorted {
+
     
 
     public static boolean isSorted(int[] arr){
@@ -20,5 +21,8 @@ public class IsArraySorted {
         System.out.println(isSorted(arr));
 
     }
+
+
+    // check if given array is ascending or decending sorted
 
 }
