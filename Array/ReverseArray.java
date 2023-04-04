@@ -21,4 +21,6 @@ public class ReverseArray {
         reverse(arr);
         System.out.println(Arrays.toString(arr));
     }
+
+    // Time complexity = Theta(n)
 }
