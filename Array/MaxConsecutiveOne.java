@@ -1,3 +1,4 @@
+
 public class MaxConsecutiveOne {
 
     public static int findMaxConsecutive(int [] arr){
