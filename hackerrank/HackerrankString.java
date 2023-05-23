@@ -11,6 +11,7 @@ public class HackerrankString {
         for (int i = 0; i < h.length(); i++) {
             char c = h.charAt(i);
             j = prevIndex + 1;
+            flag = false;
             while (j < s.length()) {
 
                 if (s.charAt(j) == c) {
