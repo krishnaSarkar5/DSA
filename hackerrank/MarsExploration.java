@@ -21,7 +21,7 @@ public class MarsExploration {
             } else if (m == 1) {
                 if (s.charAt(i) != 'O') {
                     count++;
-                }
+                }  
             }
 
         }
