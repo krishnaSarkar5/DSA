@@ -47,5 +47,5 @@ public class MergeTwoSortedArray {
 
 }
 
-// time complexity O(n) aux space O(n+m)
+// time complexity O(n+m) aux space O(n+m)
 // this is stable
