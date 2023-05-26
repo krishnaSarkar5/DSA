@@ -3,32 +3,32 @@ package sorting;
 import java.util.Arrays;
 
 public class Selection {
-    
-    public static void sort(int[] arr){
 
-        for(int i=0;i<arr.length;i++){
+    public static void sort(int[] arr) {
 
-            int min_index = i ;
+        for (int i = 0; i < arr.length - 1; i++) {
 
-            for(int j=i;j<arr.length;j++){
+            int min_index = i;
 
-                if(arr[j]<arr[min_index]){
+            for (int j = i + 1; j < arr.length; j++) {
 
-                    int temp = arr[j];
-                    arr[j] = arr[min_index];
-                    arr[min_index]=temp;
-
+                if (arr[j] < arr[min_index]) {
+                    min_index = j;
                 }
 
             }
+
+            int temp = arr[i];
+            arr[i] = arr[min_index];
+            arr[min_index] = temp;
 
         }
 
     }
 
     public static void main(String[] args) {
-        
-        int[] arr = {1,2,7,5,8,2};
+
+        int[] arr = { 1, 2, 7, 5, 8, 2 };
 
         sort(arr);
 
