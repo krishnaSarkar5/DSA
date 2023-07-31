@@ -73,9 +73,55 @@ public class NextPermutation {
 
 
 
+
+    static void nextPermutationOptimal(int[] arr){
+
+
+        int index = -1;
+
+        for(int i=arr.length-2;i>=0;i--){
+            if(arr[i]<arr[i+1]){
+                index=i;
+                break;
+            }
+        }
+
+
+        if(index==-1){
+            reverse(arr,0,arr.length-1);
+            return;
+        }else{
+            for(int i=arr.length-1;i>=0;i--){
+                if(arr[i]>arr[index]){
+                    swap(arr, index, i);
+                     break;
+                }
+               
+            }
+
+            reverse(arr, index+1, arr.length-1);
+
+        }
+
+
+    }
+
+
+    static void reverse(int[] arr,int start,int end){
+        
+        int diff = (end-start);
+        int len = diff/2;
+        
+        for(int i=0;i<=len;i++){
+            swap(arr, (start+i), (end-i));
+        }
+        System.out.println();
+    }
+
+
     public static void main(String[] args) {
-        int[] arr = {1,2};
-        nextPermutation(arr);
+        int[] arr = {2,3,1};
+        nextPermutationOptimal(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
