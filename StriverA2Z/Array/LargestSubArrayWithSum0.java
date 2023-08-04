@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LargestSubArrayWithSumK {
+public class LargestSubArrayWithSum0 {
     
 
     static int findLargestSubarray(int[] arr,int target){
@@ -19,7 +19,7 @@ public class LargestSubArrayWithSumK {
                 max = Math.max(max,i+1);
             }
 
-            int rem = sum-target;            // 9, -3, 3, -1, 6, -5
+            int rem = sum-target;            
 
             if(map.containsKey(rem)){
                 max=Math.max(max,i-map.get(rem));
@@ -37,11 +37,10 @@ public class LargestSubArrayWithSumK {
 
     public static void main(String[] args) {
         
-        int[] arr = {9, -3, 3, -1, 6, -5};
+        int[] arr = {2,3,5,1,9};
 
-        int target = 0;
+        int target = 10;
 
         System.out.println(findLargestSubarray(arr, target));
-
     }
 }

@@ -33,8 +33,8 @@ public class CountSubarraySum {
     }
 
     public static void main(String[] args) {
-        int[] arr = {3, 1, 2, 4};
-        int target = 6;
+        int[] arr = {9, -3, 3, -1, 6, -5};
+        int target = 0;
         System.out.println(countSubarray(arr, target));
     }
 }
